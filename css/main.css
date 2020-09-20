@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list_element {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+.list_element:last-child {
+  margin-right: 0px;
+}
+#gallery {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#gallery img {
+  width: 400px;
+  height: 280px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
