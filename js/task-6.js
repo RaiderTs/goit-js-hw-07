@@ -6,10 +6,10 @@
 //  1. Получаем ссылку на инпут.
 const inputEl = document.querySelector('#validation-input');
 // 2.  Получаем переменную для ограничения введенных символов.invalid
-const maxLength = inputEl.dataset.length;
+const maxLength = Number(inputEl.dataset.length);
 // 3. Создаем функцию
 const constraintСheck = inputEl.addEventListener('blur', () => {
-  if (inputEl.value.length <= maxLength) {
+  if (inputEl.value.length === maxLength) {
     inputEl.classList.add('valid');
     inputEl.classList.remove('invalid');
   } else {
